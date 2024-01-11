@@ -65,14 +65,12 @@ class TransferDialog extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pop(); // Close the dialog
+                      Navigator.of(context).pop();
                     },
                     child: const Text('Cancel'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      // Add your transfer logic here
-                      // You can also close the dialog if the transfer is successful
                       Navigator.of(context).pop();
                     },
                     child: const Text('Transfer'),
