@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:zajel_app1/src/config/routes/routes.dart';
 import 'package:zajel_app1/src/config/theme/theme.dart';
 
 class LoginController extends GetxController {
@@ -30,19 +31,24 @@ class LoginController extends GetxController {
 
   Future onLogin() async {
     if (formkey.currentState!.validate()) {
-      Future<bool> code = AuthenticationRepository()
-          .login(email.text.trim(), password.text.trim());
-      if (await code) {
-        Get.snackbar("Success", "Login Successful",
-            snackPosition: SnackPosition.BOTTOM,
-            colorText: AppTheme.lightAppColors.mainTextcolor,
-            backgroundColor: AppTheme.lightAppColors.primary);
-      } else {
-        Get.snackbar("ERROR", "Email or Password is invild",
-            snackPosition: SnackPosition.BOTTOM,
-            colorText: AppTheme.lightAppColors.mainTextcolor,
-            backgroundColor: AppTheme.lightAppColors.tertiary);
-      }
+       Get.toNamed(AppRoutes.dashBoard);
+
+      // Future<bool> code = AuthenticationRepository()
+      //     .login(email.text.trim(), password.text.trim());
+      // if (await code) {
+      //   Get.snackbar("Success", "Login Successful",
+      //       snackPosition: SnackPosition.BOTTOM,
+      //       colorText: AppTheme.lightAppColors.mainTextcolor,
+      //       backgroundColor: AppTheme.lightAppColors.primary);
+      // } else {
+      //   Get.snackbar("ERROR", "Email or Password is invild",
+      //       snackPosition: SnackPosition.BOTTOM,
+      //       colorText: AppTheme.lightAppColors.mainTextcolor,
+      //       backgroundColor: AppTheme.lightAppColors.tertiary);
+      // }
+
+      
+
       return;
     } else {
       Get.snackbar("ERROR", "Email or Password is invild",

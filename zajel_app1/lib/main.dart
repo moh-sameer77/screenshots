@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:zajel_app1/src/View/mail_details/controller/mail_controller.dart';
 import 'package:zajel_app1/src/controller/app_controller.dart';
 
 
@@ -12,7 +13,7 @@ void main() async {
 
   Get.put(Appcontroller());
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       splitScreenMode: true,

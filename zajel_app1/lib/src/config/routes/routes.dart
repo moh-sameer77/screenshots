@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import '../../View/splash_screen/splash_page.dart';
 import 'package:zajel_app1/src/View/login/pages/login_page.dart';
 
+import '../../View/tapbar/view/tap_bar_view.dart';
+
 
 class AppRoutes {
   static const String splashScreen = '/';
@@ -22,7 +24,7 @@ class AppRoutes {
     ),
     GetPage(
       name: mainPage,
-      page: () => const Scaffold(),
+      page: () => const TapBarView(),
     ),
     GetPage(
       name: dashBoard,
