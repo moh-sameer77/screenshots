@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:zajel_app1/src/View/mail_details/controller/mail_controller.dart';
 
 import '../../../../config/theme/theme.dart';
@@ -27,36 +28,36 @@ class TransferDialog extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Your ListView here
               Center(
-                child:
-                      
-                 Obx(() => ListView(
+                child: ListView(
                   shrinkWrap: true,
                   children: [
                     ListTile(
-                      title: Container(
-                        color: mailController.isItemSelected.value
-                            ? Colors.blue.withOpacity(0.3)
-                            : null,
-                        height: 50,
-                        width: 130,
-                        child: Text(
-                          "Item1",
-                          style: TextStyle(
-                            color: AppTheme.lightAppColors.mainTextcolor,
-                            fontSize: 12.0.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
+                      title: Obx(() => Container(
+                            color: mailController.isItemSelected.value
+                                ? Colors.blue.withOpacity(0.3)
+                                : null,
+                            height: 50,
+                            width: 130,
+                            child: Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: Text(
+                                "Item 1",
+                                style: GoogleFonts.poppins(
+                                  color: AppTheme.lightAppColors.mainTextcolor,
+                                  fontSize: 16.0.sp,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ),
+                          )),
                       onTap: () {
                         mailController.toggleSelection("item1");
                         print(mailController.selectedItems);
                       },
                     )
                   ],
-                ),)
+                ),
               ),
               const SizedBox(height: 16.0),
               Row(
