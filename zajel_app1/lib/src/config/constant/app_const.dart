@@ -1,7 +1,7 @@
 
 class AppConst {
 
-  static String logo = "assets/ZAJEL-Logo.png"; 
+
   static bool passwordVisible = false;
   //size const
   static double smallSize = 15;
@@ -9,23 +9,20 @@ class AppConst {
   static double largeSize = 45;
 
   // String const
-
-  static String pastlogin = "login or sign up";
-  static String pastloginText =
-      "Create your account and mange your appointments";
-  static String googleContainerText = 'Continue with Google';
-  static String appleCotanierText = 'Continue with Apple';
   static String login = "LOGIN";
-  static String signUp = "SIGN UP";
   static String email = "Email";
   static String password = "Password";
-  static String confirmPassword = "Confirm Password";
-  static String gander = "Gander";
-  static String age = "Date of birth";
-  static String username = "User Name";
-  static String phoneNumber = "Phone Number";
-  static String verificationOTP = "VERIFICATION CODE";
-  static String googleimg = 'assets/Google.svg';
-  static String appleimg = 'assets/Apple.svg';
+  static String googleImage = 'assets/Google.svg';
+  static String appleImage = 'assets/Apple.svg';
+
+  static String logo = "assets/ZAJEL-Logo.png"; 
+  static String appBarUsername = "Mohammad Maghathe";
+  static String onboardingText = "a mobile correspondence system at your fingertips";
+  //home
+  static String home = "Home";
+  //about
+  static String aboutContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit duis tristique. Enim lobortis scelerisque fermentum dui faucibus in ornare. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Risus feugiat in ante metus dictum. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Adipiscing tristique risus nec feugiat in. Nibh praesent tristique magna sit amet purus gravida. Egestas diam in arcu cursus euismod quis viverra nibh cras. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Rhoncus mattis rhoncus urna neque viverra justo nec. Quisque non tellus orci ac. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Sed tempus urna et pharetra.";
+  static String aboutTitle = "What is Zajel ?";
+  /////
 
 }

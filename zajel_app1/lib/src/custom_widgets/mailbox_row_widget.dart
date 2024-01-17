@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zajel_app1/src/config/theme/theme.dart';
-import 'package:zajel_app1/src/View/mail_details/view/mail_details_page.dart';
+import 'package:zajel_app1/src/Features/mail_details/view/mail_details_page.dart';
 
-import '../View/mail_details/model/mail_model.dart';
-import '../View/inbox/view/widgets/inbox_text_widgets.dart';
+import '../Features/mail_details/model/mail_model.dart';
+import '../Features/inbox/view/widgets/inbox_text_widgets.dart';
 
 class MailBoxRowWidget extends StatelessWidget {
   final Mail mail;

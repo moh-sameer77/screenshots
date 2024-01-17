@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:zajel_app1/src/View/mail_details/controller/mail_controller.dart';
-import 'package:zajel_app1/src/controller/app_controller.dart';
 
 
 import 'src/config/routes/routes.dart';
@@ -10,8 +8,6 @@ import 'src/config/theme/theme.dart';
 
 
 void main() async {
-
-  Get.put(Appcontroller());
 
   runApp(const MyApp());
 }
